@@ -693,8 +693,8 @@ class Stability(Weir):
         return self.dam_lever
 
     def get_hydrostatic(self):
-        # Considering, h = effective_height / 2 and wet area = H * 1
-        self.hydrostatic = 1.5 * self.effective_height * self.w
+        # Considering, h = effective_height / 2 and wet area = effective_height * 1
+        self.hydrostatic = self.w * (self.effective_height/2.0) * self.effective_height
         return self.hydrostatic
 
     def get_hydrostatic_lever(self):
@@ -1222,7 +1222,7 @@ if __name__ == "__main__":
     # DATA AND DEFINITIONS
 
     # Open the file that contain data
-    files = ['../examples/data/test_data_01.csv']
+    files = ['examples/data/test_data_01.csv']
 
     for datafile in files:
 
