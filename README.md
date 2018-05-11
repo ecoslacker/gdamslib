@@ -2,7 +2,7 @@
 Design of small gabion dams for soil conservation
 
 **WARNING!** This module is under *testing*, please consider that there may be calculation errors.
-Do not use under production or academic environments until the code is marked as *stable*.
+Do not use it under production or academic environments until the code is marked as *stable*.
 
 # Description
 
@@ -24,8 +24,8 @@ The module has modules to perform the following calculations:
 
 # Usage
 
-The following code presents an exampleof how to use the module to design one or mode gabion dams
-usin the data from a list of file names.
+The following code presents an example of how to use the module to design one or mode gabion dams
+using the data from a list of file names.
 
 ```python
 if __name__ == "__main__":
